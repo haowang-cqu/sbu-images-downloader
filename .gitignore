@@ -1,0 +1,5 @@
+images/
+*.json
+*.tar
+*.tar.gz
+*.csv
