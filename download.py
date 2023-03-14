@@ -96,7 +96,7 @@ def main():
         result = executor.map(action, image_urls, user_ids, captions, [args] * len(image_urls))
     pbar.close()
     counter = Counter(result)
-    print(counter)
+    print('exists: {}, succeeded: {}, failed: {}'.format(counter[0], counter[1], counter[2]))
     result_df.to_csv(args.result, index=False)
 
 
